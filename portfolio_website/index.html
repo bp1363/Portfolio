@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brajpal- Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body,h1,h2,h3,h4,h5,p,ul,li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            line-height: 1.6;
+            font-family: 'Poppins',sans-serif;
+        }
+        header{
+            background-color: #333;
+            padding: 10px;
+        }
+        header h2{
+            color:rgb(250, 108, 13);
+        }
+        nav{
+            
+            background-color: rgb(4, 4, 32);
+            height: 100px;
+            margin: 0 23px ;
+            padding: 0;
+
+        }
+        nav ul{
+          
+           display: flex;
+           justify-content: right;
+           
+        }
+        nav  li{
+            list-style-type: none;
+            display: inline;
+       }
+
+       nav a{
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+       }
+       main{
+        padding: 20px;
+       }
+       section{
+        margin-bottom: 20px;
+       }
+       footer{
+        background-color: #0a0484;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+
+       }
+       #home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          padding: 40px;
+          text-align: left;
+            background-color: rgb(185, 250, 185);
+        }
+
+        
+        
+
+
+        .photo-container{
+            flex: 0 0 40%;
+            text-align: center;
+        }
+        .photo-container img{
+            max-width: 40vh;
+            height: auto;
+
+        }
+        .text-container{
+            flex: 0 0 60%;
+            padding-left: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        div h3{
+            color: rgb(147, 17, 17);
+
+        }
+
+
+        #about{
+            background-color: rgb(196, 235, 235);
+            padding: 40px;
+            text-align: left;
+        }
+        div h5{
+            color: rgb(25, 81, 137);
+
+        }
+        .about-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+        .about-image{
+            flex-basis: 30%;
+            text-align : center;
+        }
+        .about-image img{
+            max-width: 100%;
+            height: auto;
+        }
+        .about-college{
+            flex-basis: 40%;
+        }
+        .about-text{
+            margin-top: 20px;
+            text-align: left;
+        }
+        #Contact{
+            background-color: darkseagreen;
+            padding: 40px;
+            text-align: center;
+            
+        }
+         </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><h2>BrajPal's Portfolio</h2></div>
+            
+            <div class="right">
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+               <li><a href="/">Contact Me</a></li>
+            </ul>
+            </div>
+       
+
+        </nav>
+    </header>
+    <main>
+        <section id  = "home">
+            <div class = "photo-container">
+                <img src="mypic.png" alt="Your photo">
+           </div> 
+            <div class = "text-container">
+                <h1>Welcome to my Portfolio website.</h1>
+                <h2>Hello,I'm </h2>
+                <h3>[Brajpal Singh]</h3>
+                <p>A SOFTWARE DEVELOPER</p>
+                <a href="#contact" class="cta-button">Get in touch</a>
+                <p>|</p>
+                <p>|</p>
+                <p>V</p>
+                <p>More about me</p>
+                
+            </div> 
+
+        </section>
+        <section id = "about">
+            <h2>About me</h2>
+            <div class = "about-content">
+                <div class ="about-text">
+                    <h5>Hello I'm Brajpal, a passionate and motivate college student pursuing a degree in computer science.</h5>
+                    <p>Throughout my academic journey,I have gained valuable knowledgeand practical skills in coding. I enjoying exploring new</p>
+                    <p>As an active member of the T&P,I have had the opportunity to enhance my leadership and teamwork abilities.</p>
+                    <p>These experience  have allowe </p>
+                    <p>My hobbies:- Reading book,Travelling etc</p>
+                    <h5>I'm from </h5>
+                    <h4>Mainpuri UTTAR PRADESH</h4>
+                    <a href="#contact" class="cta-button">Get in touch</a>
+
+                </div>
+                <div class = "about-image">
+                    <img src="logo.webp" alt="Your photo">
+                </div>
+                <div class = "about-college">
+                    <h1>About My College</h1>
+                    <h5>IIMT COLLEGE OF ENGINEERING</h5>
+                    <p>It was founded in 1994</p>
+                    <p>Location:-Greater Noida UP</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section id = "Contact">
+            <h2>Contact</h2>
+            <p>Contact Information</p>
+            <p>Thank you for visiting my Portfolioid you'd like to get in touch,please feel free to reach out through one of the following</p>
+            <ul>
+                <li>Email:[brajpal1363@gmail.com]</li>
+                <li>Phone:[7017237368]</li>
+                <li>Social Media:linkedin:[ https://www.linkedin.com/in/brajpal-singh-2098a8157
+]</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <script src="script.js">
+            const navLinks= document.querySelectorAll('nav a');
+            navLinks.forEach(link =>{
+                link.addEventsListener('click',e =>{
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    windows.scrollTo({
+                        top:targetSection.offsetTop,
+                        behavior:'smooth'
+                    });
+                });
+
+                });
+        </script>
+    </footer>
+
+</body>
+
+</html>
